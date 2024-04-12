@@ -1,5 +1,7 @@
 # JavaScript Debugging Checklist
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Welcome to the JavaScript Debugging Checklist! This resource is designed to guide developers, especially beginners, through a structured approach to debugging JavaScript code.
 
 ## Introduction
@@ -12,6 +14,10 @@ Debugging is a critical skill in software development, essential for identifying
 - Each step is clearly described and marked with a checkbox.
 - Simple and clear layout designed for ease of use.
 - Reset button to clear all checked items for reuse.
+
+## Screenshot
+
+![JavaScript Debugging Checklist](./images/screenshot.jpeg)
 
 ## How to Use
 
