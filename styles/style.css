@@ -13,28 +13,26 @@ h1 {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 40px;
   margin-bottom: 20px;
+  overflow: hidden; /* Add this to contain floats */
 }
 .step {
-  /* Other styles remain unchanged */
-  padding-left: 35px; /* Increase padding to make room for the checkbox */
+  position: relative;
+  padding-left: 40px; /* Adjust as needed */
 }
 .step input[type="checkbox"] {
-  margin-right: 10px;
-  cursor: pointer;
-  /* Adjust size */
-  width: 25px;
-  height: 25px;
-  /* Position to center vertically with the text */
-  position: relative;
-  top: 6px;
+  float: left; /* Use float to align the checkbox */
+  margin-left: -20px; /* Adjust as needed */
+  margin-top: 4px; /* Adjust as needed */
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
 }
 label {
   display: block;
-  margin-left: 5px;
+  margin-left: 40px;
   font-size: 16px;
-  cursor: pointer;
+  line-height: 24px; /* Adjust line-height to match checkbox height for vertical centering */
 }
 button {
   background-color: #007bff;
@@ -45,17 +43,8 @@ button {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  margin-top: 20px; /* Add some space above the button */
 }
 button:hover {
   background-color: #0056b3;
-}
-
-/* New style for responsive alignment */
-@media screen and (max-width: 768px) {
-  .step {
-    padding-left: 45px; /* Increase padding for smaller screens if necessary */
-  }
-  .step input[type="checkbox"] {
-    top: 4px; /* Adjust position for smaller screens if necessary */
-  }
 }
