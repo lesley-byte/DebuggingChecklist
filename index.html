@@ -18,38 +18,49 @@
     <form id="debugForm">
         <div class="step">
             <input type="checkbox" id="full_code" name="full_code">
-            <label for="full_code">Start with the full code, identify the scope of the problem and affected
-                areas.</label>
+            <label for="full_code"><span class="highlight"
+                    title="E.g., Check the console for error messages and identify which scripts are causing issues.">Start</span>
+                with the full code, identify the scope of the problem and affected areas.</label>
         </div>
         <div class="step">
             <input type="checkbox" id="simplify_code" name="simplify_code">
-            <label for="simplify_code">Simplify the code to a minimal example using static values, remove unnecessary
-                parts.</label>
+            <label for="simplify_code"><span class="highlight"
+                    title="E.g., Remove third-party scripts and use hardcoded values to replace API calls.">Simplify</span>
+                the code to a minimal example using static values, remove unnecessary parts.</label>
         </div>
         <div class="step">
             <input type="checkbox" id="add_logging" name="add_logging">
-            <label for="add_logging">Add logging statements to trace values at critical points.</label>
+            <label for="add_logging"><span class="highlight"
+                    title="E.g., Use console.log(variable) to output current values of variables.">Add logging</span>
+                statements to trace values at critical points.</label>
         </div>
         <div class="step">
             <input type="checkbox" id="reintroduce_complexity" name="reintroduce_complexity">
-            <label for="reintroduce_complexity">Incrementally reintroduce complexity and test each addition
-                alone.</label>
+            <label for="reintroduce_complexity"><span class="highlight"
+                    title="E.g., Gradually re-enable functions and observe at which point the error returns.">Incrementally</span>
+                reintroduce complexity and test each addition alone.</label>
         </div>
         <div class="step">
             <input type="checkbox" id="test_addition" name="test_addition">
-            <label for="test_addition">Test after each addition to ensure the system functions correctly.</label>
+            <label for="test_addition"><span class="highlight"
+                    title="E.g., Use unit tests or manual checks to confirm each feature works as intended.">Test</span>
+                after each addition to ensure the system functions correctly.</label>
         </div>
         <div class="step">
             <input type="checkbox" id="observe_logs" name="observe_logs">
-            <label for="observe_logs">Observe logs and identify when errors occur, analyze conditions.</label>
+            <label for="observe_logs"><span class="highlight"
+                    title="E.g., Look for 'undefined' or 'null' errors that may not halt execution but lead to bugs.">Observe
+                    logs</span> and identify when errors occur, analyze conditions.</label>
         </div>
         <div class="step">
             <input type="checkbox" id="resolve_issue" name="resolve_issue">
-            <label for="resolve_issue">Resolve the issue when identified, modify or correct the specific part causing
-                the issue.</label>
+            <label for="resolve_issue"><span class="highlight"
+                    title="E.g., If a variable is 'undefined', ensure it's declared and assigned before use.">Resolve</span>
+                the issue when identified, modify or correct the specific part causing the issue.</label>
         </div>
         <button type="button" onclick="resetForm()">Reset Checklist</button>
     </form>
+
 
     <script src="scripts/script.js"></script>
 </body>

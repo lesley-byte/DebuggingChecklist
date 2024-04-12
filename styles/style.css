@@ -48,3 +48,9 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.highlight {
+  color: #007bff; /* Choose your color */
+  font-weight: bold;
+  font-size: 1.2em; /* Larger size */
+}
